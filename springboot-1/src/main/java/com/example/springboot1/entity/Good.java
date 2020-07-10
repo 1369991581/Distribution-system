@@ -4,15 +4,16 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Getter@Setter
-public class Member extends BasePerson {
+public class Good {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
-
-    @OneToMany(mappedBy = "member")
-    List<Order> orders;
+    private String goodsName;//货物名称
+    private Double goodsWeight;//货物重量
+    private Integer goodsNumber;//货物数量
+    @ManyToOne
+    private Order order;
 }

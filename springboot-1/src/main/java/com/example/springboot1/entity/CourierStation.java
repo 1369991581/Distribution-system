@@ -7,12 +7,12 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Getter@Setter
-public class Member extends BasePerson {
+@Getter
+@Setter
+public class CourierStation extends BasePerson {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
-
-    @OneToMany(mappedBy = "member")
+    @OneToMany(mappedBy = "station")
     List<Order> orders;
 }

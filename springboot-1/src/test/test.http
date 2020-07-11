@@ -1,0 +1,14 @@
+POST http://localhost:8080/register/member
+
+
+###
+POST http://localhost:8080/register/sender
+Content-Type: application/json
+
+{
+  "username": "111",
+  "password": "222"
+
+}
+
+###

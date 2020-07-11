@@ -15,5 +15,5 @@ public class Good {
     private Double goodsWeight;//货物重量
     private Integer goodsNumber;//货物数量
     @ManyToOne
-    private Order order;
+    private OrderList order;
 }

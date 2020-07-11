@@ -11,10 +11,10 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
-public class Sender {
+public class Sender extends BasePerson{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
     @OneToMany(mappedBy = "sender")
-    List<Order> orders;
+    List<OrderList> orders;
 }

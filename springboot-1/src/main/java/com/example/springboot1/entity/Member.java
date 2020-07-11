@@ -14,5 +14,5 @@ public class Member extends BasePerson {
     Integer id;
 
     @OneToMany(mappedBy = "member")
-    List<Order> orders;
+    List<OrderList> orders;
 }

@@ -14,5 +14,5 @@ public class CourierStation extends BasePerson {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
     @OneToMany(mappedBy = "station")
-    List<Order> orders;
+    List<OrderList> orders;
 }
